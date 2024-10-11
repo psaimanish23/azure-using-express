@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script
+        src="https://cdn.jsdelivr.net/npm/microsoft-cognitiveservices-speech-sdk@latest/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle-min.js">
+        </script>
+    <script src="/js/socket.io.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <div id="userInputDiv">
+
+            <div>
+                <input type="text" id="userInput" placeholder="N A M E">
+            </div>
+
+            <div><button id="createBtn">Create</button></div>
+
+            <div id="join-container">
+                <input type="text" id="roomInput" placeholder="R O O M">
+                <button id="joinBtn">Join</button>
+            </div>
+
+        </div>
+
+        <div id="usersConnected">
+            <h1 id="userConnectedHeading"></h1>
+        </div>
+
+        <div id="videoContainer">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+
+        <div>
+            <button id="streamLingo" style="display: none;">StreamLingo</button>
+        </div>
+
+        <div>
+            <label for="transcription" id="transcriptionLabel"></label>
+            <div id="transcription"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
