@@ -304,7 +304,7 @@ const streamLingoBtn = document.querySelector("#streamLingo");
 const transcriptionDiv = document.querySelector("#transcription");
 const translationStatus = document.querySelector("#transcriptionLabel");
 
-const socket = io("https://smiling-refined-lionfish.ngrok-free.app/");
+const socket = io("https://streamlingo-c8azgughbybreqbx.southeastasia-01.azurewebsites.net/");
 let localStream;
 
 let audioContext, audioWorkletNode;
